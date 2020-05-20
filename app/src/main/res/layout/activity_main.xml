@@ -182,7 +182,7 @@
                     android:id="@+id/txtdecpfac"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Descripción de la factura:" />
+                    android:text="@string/descripci_n_de_la_factura" />
 
                 <EditText
                     android:id="@+id/inDesf"
