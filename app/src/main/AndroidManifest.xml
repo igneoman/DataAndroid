@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EliminarPedido"></activity>
+        <activity android:name=".EliminarProveedor"></activity>
+        <activity android:name=".AgregarProveedor" />
+        <activity android:name=".MainActivitySec" />
+        <activity android:name=".EliminarPedido" />
         <activity android:name=".AgregarPedido" />
         <activity android:name=".MainActivity">
             <intent-filter>
