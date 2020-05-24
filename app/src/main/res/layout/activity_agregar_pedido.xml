@@ -54,7 +54,7 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/NumFac"
+                        android:id="@+id/RegNot"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -99,7 +99,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/BasImp"
+                    android:id="@+id/CodRespC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -108,7 +108,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/inIva"
+                    android:id="@+id/ImSeg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -133,7 +133,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/inFechf"
+                    android:id="@+id/inFecHom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
