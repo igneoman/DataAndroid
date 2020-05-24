@@ -152,7 +152,9 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine" />
+                    android:inputType="textMultiLine"
+                    android:textIsSelectable="false"
+                    android:windowSoftInputMode="stateVisible" />
 
             </LinearLayout>
 
@@ -176,6 +178,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
+                    android:onClick="canp"
                     android:text="Cancelar"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

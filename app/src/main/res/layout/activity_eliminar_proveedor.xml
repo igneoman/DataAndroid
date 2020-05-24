@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
         android:layout_marginEnd="60dp"
+        android:onClick="canp"
         android:text="Cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inNumf2" />

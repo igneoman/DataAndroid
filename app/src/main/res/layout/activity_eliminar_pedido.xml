@@ -18,13 +18,17 @@
 
     <EditText
         android:id="@+id/inNumf2"
-        android:layout_width="wrap_content"
+        android:layout_width="150sp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="208dp"
+        android:layout_marginEnd="64dp"
         android:layout_weight="1"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewc"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -43,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
         android:layout_marginEnd="60dp"
+        android:onClick="canp"
         android:text="Cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inNumf2" />
