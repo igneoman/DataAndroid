@@ -31,7 +31,7 @@ public class EliminarPedido extends AppCompatActivity {
         try {
             conexion = Connect.conecta();
             preparedStatement = conexion.prepareStatement("Delete from act_prov where NUM_FACTURA=?");
-            preparedStatement.setString(1, String.valueOf(NumF.getText()));
+            preparedStatement.setString(1,NumF.getText().toString());
             int ok = preparedStatement.executeUpdate();
             if (ok > 0) {
                 Toast.makeText(getApplicationContext(),"Dato eliminado", Toast.LENGTH_SHORT).show();

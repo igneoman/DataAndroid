@@ -49,12 +49,12 @@ public class AgregarProveedor extends AppCompatActivity {
             try {
                 conexion = Connect.conecta();
                 preparedStatement = conexion.prepareStatement("Insert into prov_comp VALUES (?,?,?,?,?,?)");
-                preparedStatement.setString(1, Fix.fixdatastr(String.valueOf(Cif.getText())));
-                preparedStatement.setString(3, Fix.fixdatastr(String.valueOf(RegN.getText())));
-                preparedStatement.setString(4, Fix.fixdatastr(String.valueOf(CRC.getText())));
-                preparedStatement.setString(5, Fix.fixdatastr(String.valueOf(ImS.getText())));
-                preparedStatement.setString(6, Fix.fixdatastr(String.valueOf(FeH.getText())));
-                preparedStatement.setString(2, Fix.fixdatastr(String.valueOf(RSP.getText())));
+                preparedStatement.setString(1, Fix.fixdatastr(Cif.getText().toString()));
+                preparedStatement.setString(3, Fix.fixdatastr(RegN.getText().toString()));
+                preparedStatement.setString(4, Fix.fixdatastr(CRC.getText().toString()));
+                preparedStatement.setString(5, Fix.fixdatastr(ImS.getText().toString()));
+                preparedStatement.setString(6, Fix.fixdatastr(FeH.getText().toString()));
+                preparedStatement.setString(2, Fix.fixdatastr(RSP.getText().toString()));
 
                 int ok = preparedStatement.executeUpdate();
                 if (ok > 0) {

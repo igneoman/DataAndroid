@@ -50,15 +50,15 @@ public class AgregarPedido extends AppCompatActivity {
            if (conexion != null) {
                preparedStatement = conexion.prepareStatement("Insert into act_prov VALUES (?,?,?,?,?,?,?,?,?)");
 
-               preparedStatement.setString(1, String.valueOf(Cif.getText()));
-               preparedStatement.setString(2, Fix.fixdatastr(String.valueOf(RSP.getText())));
-               preparedStatement.setInt(3, Fix.fixdataint(String.valueOf(NumF.getText())));//Str
-               preparedStatement.setString(4, Fix.fixdatastr(String.valueOf(DesF.getText())));
-               preparedStatement.setString(5, Fix.fixdatastr(String.valueOf(BasI.getText())));
-               preparedStatement.setInt(6, Fix.fixdataint(String.valueOf(IVA.getText())));//Str
-               preparedStatement.setInt(7, Fix.fixdataint(String.valueOf(TotI.getText())));//Str
-               preparedStatement.setString(8, Fix.fixdatastr(String.valueOf(FeF.getText())));
-               preparedStatement.setString(9, Fix.fixdatastr(String.valueOf(FeV.getText())));
+               preparedStatement.setString(1, Cif.getText().toString());
+               preparedStatement.setString(2, Fix.fixdatastr(RSP.getText().toString()));
+               preparedStatement.setInt(3, Fix.fixdataint(NumF.getText().toString()));//Str
+               preparedStatement.setString(4, Fix.fixdatastr(DesF.getText().toString()));
+               preparedStatement.setString(5, Fix.fixdatastr(BasI.getText().toString()));
+               preparedStatement.setInt(6, Fix.fixdataint(IVA.getText().toString()));//Str
+               preparedStatement.setInt(7, Fix.fixdataint(TotI.getText().toString()));//Str
+               preparedStatement.setString(8, Fix.fixdatastr(FeF.getText().toString()));
+               preparedStatement.setString(9, Fix.fixdatastr(FeV.getText().toString()));
            }
 
             int ok = preparedStatement.executeUpdate();
@@ -75,8 +75,6 @@ public class AgregarPedido extends AppCompatActivity {
         } catch (SQLException e1) {
             e1.printStackTrace();
         }
-
-        finish();
 
     }
 
