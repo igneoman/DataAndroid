@@ -14,7 +14,7 @@ public class EliminarProveedor extends AppCompatActivity {
         setContentView(R.layout.activity_eliminar_proveedor);
     }
 
-    public void canp(){
+    public void canp(View view){
         finish();
     }
 }

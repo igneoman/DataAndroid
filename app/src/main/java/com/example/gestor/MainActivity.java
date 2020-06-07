@@ -25,18 +25,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void qp(){
+    public void qp(View view){
         Intent intent2 = new Intent(MainActivity.this,EliminarPedido.class);
         startActivity(intent2);
     }
 
-    public void pro(){
+    public void pro(View view){
         Intent gespro = new Intent(MainActivity.this,MainActivitySec.class);
         startActivity(gespro);
     }
 
 
-    public void salir(){
+    public void salir(View view){
         finish();
     }
 }
