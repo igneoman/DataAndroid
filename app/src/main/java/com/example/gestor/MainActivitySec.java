@@ -15,21 +15,21 @@ public class MainActivitySec extends AppCompatActivity {
     }
 
 
-    public void ap(View view){
+    public void ap(){
         Intent intent = new Intent(MainActivitySec.this,AgregarProveedor.class);
         startActivity(intent);
     }
 
-    public void qp(View view){
+    public void qp(){
         Intent intent2 = new Intent(MainActivitySec.this,EliminarProveedor.class);
         startActivity(intent2);
     }
 
-    public void canp(View view){
+    public void canp(){
         finish();
     }
 
-    public void salir(View view){
+    public void salir(){
         finishAffinity();
     }
 }

@@ -13,7 +13,7 @@ public class EliminarPedido extends AppCompatActivity {
         setContentView(R.layout.activity_eliminar_pedido);
     }
 
-    public void canp(View view){
+    public void canp(){
         finish();
     }
 

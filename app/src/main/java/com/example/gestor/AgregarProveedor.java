@@ -13,7 +13,7 @@ public class AgregarProveedor extends AppCompatActivity {
         setContentView(R.layout.activity_agregar_proveedor);
     }
 
-    public void canp(View view){
+    public void canp(){
         finish();
     }
 }
