@@ -10,7 +10,8 @@ public class Connect {
     /*Por ahora en local, pero cuando pueda usarÃ©
     https://www.freemysqlhosting.net/ o https://www.freesqldatabase.com/ o https://www.db4free.net/*/
     //En Local
-	private static String url = "jdbc:mysql://localhost:3306/empresadb";
+    //10.0.2.2 es para acceder al localhost demi PC
+	private static String url = "jdbc:mysql://10.0.2.2:3306/empresadb";
 	private static String user = "root";
 	private static String pass = "";
     //En remoto acceder con usuario y contraseña aquí:
