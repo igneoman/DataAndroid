@@ -13,6 +13,12 @@ public class AgregarPedido extends AppCompatActivity {
         setContentView(R.layout.activity_agregar_pedido);
     }
 
+    public void ape(View view){
+
+
+
+    }
+
     public void canp(View view){
         finish();
     }
